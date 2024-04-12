@@ -1,18 +1,21 @@
-#:import get_color_from_hex kivy.utils.get_color_from_hex
+
 
 
 
 
 MDScreen:
-    md_bg_color: app.theme_cls.surfaceColor
+    #md_bg_color: app.theme_cls.surfaceColor
     MDButton:
-        pos_hint: {'center_x': .5, 'center_y': .5}
+        text: 'L'
+        pos_hint: {'center_x': .5, 'center_y': .2}
 
-        MDButtonIcon:
-            icon: 'plus'
+    MDIconButton:
+        icon: 'plus'
+        pos_hint: {'center_x': .5, 'center_y': .4}
 
-        MDTextButton:
-            text: 'Login'
+    MDTextButton:
+        text: 'Login'
+        pos_hint: {'center_x': .5, 'center_y': .6}
 
 
 
